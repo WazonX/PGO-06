@@ -1,16 +1,11 @@
 public class Ptak extends Zwierze{
     public Ptak(String nazwa, int wiek, boolean czyLata, String dzwiek, String porusz, String srodowisko) {
-        super(nazwa, wiek);
+        super(nazwa, wiek, dzwiek, porusz, srodowisko);
         this.czyLata = czyLata;
-        this.dzwiek = dzwiek;
-        this.porusz = porusz;
-        this.srodowisko = srodowisko;
     }
     protected boolean czyLata;
-    protected String dzwiek, porusz, srodowisko;
 
-
-    public boolean getCzyLata() {
+    public boolean isCzyLata() {
         return czyLata;
     }
 

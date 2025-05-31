@@ -1,16 +1,19 @@
 public class Gad extends Zwierze{
 
     public Gad(String nazwa, int wiek, boolean trujacy, String dzwiek, String porusz, String srodowisko) {
-        super(nazwa, wiek);
+        super(nazwa, wiek,dzwiek, porusz, srodowisko);
         this.trujacy = trujacy;
-        this.dzwiek = dzwiek;
-        this.porusz = porusz;
-        this.srodowisko = srodowisko;
+    }
+
+    public boolean isTrujacy() {
+        return trujacy;
+    }
+
+    public void setTrujacy(boolean trujacy) {
+        this.trujacy = trujacy;
     }
 
     protected boolean trujacy;
-    protected String dzwiek, porusz, srodowisko;
-
 
     @Override
     public void wyswietlInformacje() {

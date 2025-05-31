@@ -1,14 +1,10 @@
 public class Ssak extends Zwierze{
     public Ssak(String nazwa, int wiek, boolean czyPlywa, String dzwiek, String porusz, String srodowisko) {
-        super(nazwa, wiek);
+        super(nazwa, wiek, dzwiek, porusz,srodowisko);
         this.czyPlywa = czyPlywa;
-        this.dzwiek = dzwiek;
-        this.porusz = porusz;
-        this.srodowisko = srodowisko;
     }
 
     protected boolean czyPlywa;
-    protected String dzwiek, porusz, srodowisko;
 
     public boolean isCzyPlywa() {
         return czyPlywa;

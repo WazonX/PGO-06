@@ -1,10 +1,37 @@
 public abstract class Zwierze {
-    protected String nazwa;
+    protected String nazwa,dzwiek,porusz, srodowisko;
     protected int wiek;
 
-    public Zwierze(String nazwa, int wiek) {
+    public Zwierze(String nazwa, int wiek, String dzwiek, String porusz, String srodowisko) {
         this.nazwa = nazwa;
         this.wiek = wiek;
+        this.porusz = porusz;
+        this.dzwiek = dzwiek;
+        this.srodowisko = srodowisko;
+    }
+
+    public String getDzwiek() {
+        return dzwiek;
+    }
+
+    public void setDzwiek(String dzwiek) {
+        this.dzwiek = dzwiek;
+    }
+
+    public String getPorusz() {
+        return porusz;
+    }
+
+    public void setPorusz(String porusz) {
+        this.porusz = porusz;
+    }
+
+    public String getSrodowisko() {
+        return srodowisko;
+    }
+
+    public void setSrodowisko(String srodowisko) {
+        this.srodowisko = srodowisko;
     }
 
     public abstract String wydajDzwiek();
